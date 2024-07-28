@@ -1,0 +1,1 @@
+module.exports='https://wellness-retreat-server.onrender.com'
