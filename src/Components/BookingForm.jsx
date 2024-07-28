@@ -77,7 +77,7 @@ const BookingForm = ({ retreat, closeForm }) => {
                     </label>
                     <label className="block mb-2">
                         Phone:
-                        <input type="text" name="user_phone" value={formData.user_phone} onChange={handleChange} className="border border-blue-600 rounded outline-none focus:ring-1 ring-blue-500 transition p-2 w-full" required />
+                        <input type="text" name="user_phone" maxLength={10} value={formData.user_phone} onChange={handleChange} className="border border-blue-600 rounded outline-none focus:ring-1 ring-blue-500 transition p-2 w-full" required />
                     </label>
                     <button type="submit" className="mt-4 px-3 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:ring-1 ring-blue-600 transition">Book</button>
                     <button type="button" className="mt-4 ml-2 px-3 py-2 bg-red-500 text-white rounded hover:bg-red-600 focus:ring-1 ring-red-500" onClick={closeForm}>Cancel</button>
